@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #060606;
+    padding:5px;
+    width: 100%;
+    height: 50px;
+    position:fixed;
+    top: 0;
+    left:0;
+}
+#header .left img{
+    margin-top:2px;
+    width:25px;
+    height:25px;
+   cursor: pointer;
+}
+.threeline{
+    width: 30px;
+    height:30px;
+    margin: 5px 10px 0 10px;
+    display: inline-block;
+}
+#threeline{
+    width: 50px;
+    height: 50px;
+    padding:2px;
+    &:hover{
+        background-color: #373333;
+        border-radius: 50%;
+        }
+}
+span{
+    color: #ffffff;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    position: fixed;
+    left:90px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+sup{
+    font-size: xx-small;
+    font-weight:lighter;
+    color: #c7c2c2;
+}#sup{
+    color: #d1cccc;
+}
+.youtubelogo{
+    display: inline-block;
+}
+#header .center{
+    width: 450px;
+    height: 35px;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #292525;
+    border-radius: 20px;
+    border: 1px solid rgb(74, 71, 71);
+}
+#header .center input[type="text"]{
+    width:400px;
+    height:34px;
+    padding-left:12px;
+    margin-top: -0.5px;
+    background-color: #040404;
+    color: #ffffff;
+    outline:none;
+    border: none;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    &:focus-visible{
+        border: 0.01rem solid rgb(14, 14, 205);
+    }
+    &::placeholder{
+        color: #929292;
+    }
+}
+ #Search{
+    width: 24px;
+    height:24px;
+    padding: 8px 2px 0px 2px;
+    margin-left: 15px;
+    background-color:transparent;
+    cursor: pointer;
+ }
+ .mic{
+    width: 50px;
+    height: 30px;
+    margin-left: 25px;
+    background-color: #2c2929;
+    border-radius: 60%;
+ }
+ #mic{
+    width:20px;
+    height:20px;
+    margin:5px;
+    &:hover{
+        border-radius: 15px;
+    }
+ }
+ .right{
+    display: flex;
+    justify-content:space-evenly;
+ }
+ .right img{
+    width: 25px;
+    height: 25px;
+    margin: 5px 10px;
+ }
+  .navlink{
+    width:98%;
+    height: 40px;
+    display: flex;
+    /* justify-content:space-evenly; */
+    background-color: #131212;
+    position: fixed;
+    top: 50px;
+    margin-left: 60px;
+  }
+  .navlink a{
+    display:block;
+    height: 25px;
+    margin: 4px 6.5px;
+    padding: 2px 7px;
+    text-decoration: none;
+    text-align: center;
+    color: #f4f4f4;
+    background-color: #292828;
+    border-radius: 10px;
+    &:hover{
+    background-color: #454343;
+
+    }
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  } 
+  .scroll{
+    width: 35px;
+    height:35px;
+    padding: 8px;
+    &:hover{
+    border-radius:50%;
+    background-color: #3a3939;
+    }
+  }
+  #scroll{
+    /* margin-top:5px; */
+    width: 20px;
+    height:20px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    }
+
+#sidebar{
+    width: 60px;
+    height: 100vh;
+    background-color: #141414;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    position: fixed;
+    top:50px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.home{
+    width:54px;
+    height: 70px;
+    line-height: 3px;
+    margin: 3px;
+    cursor: pointer;
+   &:hover{ border-radius:10px ;
+        background-color: #242222;
+}
+}
+#sidebar img{
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+}
+#main{
+    width: calc(100%-60px);
+    margin-left: 60px;
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:5px;
+    background-color: #181616;
+}
+.cards{
+    width: 342px;
+    height:300px;
+}
+  img{
+     width: 100%;
+     height: 200px;
+     margin-bottom: 5px;
+     border-radius:15px;
+    &:hover{
+        border-radius:0;
+        /* scale: 1.002; */
+    }
+}
+.discription{
+    display: flex;
+    gap: 5px;
+}
+#dot{
+    width: 20px;
+    height: 20px; 
+    cursor: pointer;
+}
+#logo{
+    margin-top:5px;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+}
+h4{
+    color: aliceblue;
+    font-size: small;
+    font-family:Roboto,Arial, sans-serif;
+}
+h6{
+    margin-left:40px;
+    line-height: 15px;
+    font-size: small;
+    font-weight: lighter;
+    font-family:'Times New Roman', Times, serif;
+    color: #aeacac;
+}
